@@ -47,7 +47,7 @@ def main():
     parser.add_argument('--agent-warmup-steps', type=int, default=50000)
     parser.add_argument('--target-update-model', type=int, default=10000)
     parser.add_argument('--disable-double-dqn', action='store_false')
-    parser.add_argument('--enable-dueling-network', type='store_true')
+    parser.add_argument('--enable-dueling-network', action='store_true')
     parser.add_argument('--lr', type=float, default=0.00025)
     parser.add_argument('--training-steps', type=int, default=50000000)
     parser.add_argument('--weights-filename', type=str, default=None)
